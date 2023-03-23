@@ -1,5 +1,5 @@
 import { query as q } from "faunadb";
-import { fauna } from "@/services/fauna";
+import { fauna } from "../../../services/fauna";
 
 import NextAuth from "next-auth/next";
 import GitHubProvider from "next-auth/providers/github";
