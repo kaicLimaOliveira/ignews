@@ -1,38 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  ignews
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-First, run the development server:
+<p align="center">
+  <img alt="ignews" src=".github/image.png" width="80%">
+  <img alt="ignews" src=".github/mobile.png" width="80%">
+</p>
+
+## 💻 Projeto
+
+ignews - O projeto tem como objetivo o estudo e desenvolvimento de uma aplicação em ReactJS com NextJS para listagem de posts e sistema de inscrição(subscription).
+
+A aplicação foi desenvolvida utilizando o framework NextJS aplicando conceitos como consumo de API externas, API Root, Server Side Rendering (SSR), Static Site Generation (SSG), Stripe para pagamentos das subscriptions, NextAuth para autenticação com Github, FaunaDB para armazenar as informações do usuário em um banco de dados e Prismic CMS para adição e gerenciamento do conteúdo dos posts.
+
+O projeto foi desenvolvido como pratica das aulas do modulo 03 do Ignite da Rocketseat
+
+## ✨ Tecnologias utilizadas
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Reactjs](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Nextjs](https://nextjs.org/)
+- [Next-Auth](https://next-auth.js.org/)
+- [Sass](https://sass-lang.com/)
+- [Prismic CMS](https://prismic.io/)
+- [FaunaDB](https://fauna.com/)
+
+## 🚀 Como executar
+
+- Você precisa instalar o [Nextjs](https://nextjs.org/docs/getting-started/installation) para executar este projeto.
+
+**Clone o projeto**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/kaicLimaOliveira/ignews.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Siga os passo abaixo**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+  #Utilize para instalar todas as dependências
+  yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+  #Para executar o projeto
+  yarn dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Configuração cutomizada
 
-## Learn More
+Veja [Referência configuração](https://nextjs.org/docs/app/building-your-application/configuring).
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Licença
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+<a href="https://kaicLimaOliveira.github.io">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/kaicLimaOliveira" width="100px;" alt="Perfil"/>
+ <br />
+ <sub><b>Kaic de Lima Oliveira</b></sub></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feito por Kaic de Lima Oliveira 👋🏽 Entre em contato!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&link=https://www.facebook.com/kaic.oliveira.587)](https://www.facebook.com/kaic.oliveira.587) [![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&link=https://www.instagram.com/kaic.lo/)](https://www.instagram.com/kaic.lo)
+[![Outlook Badge](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white&link=mailto:kaic10@outlook.com)](mailto:kaic10@outlook.com)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaic-de-lima-oliveira-3633041a4/)

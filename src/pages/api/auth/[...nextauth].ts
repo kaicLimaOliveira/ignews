@@ -21,7 +21,44 @@ export default NextAuth({
     } as GitHubProviderConfig),
   ],
   callbacks: {
-    async signIn({ user, account, profile }): Promise<boolean> {
+    async session({ session }) {
+      try {
+        const userActiveSubscription = await fauna.query(
+          q.Get(
+            q.Intersection([
+              q.Match(
+                q.Index('subscription_by_user_ref'),
+                q.Select(
+                  'ref',
+                  q.Get(
+                    q.Match(
+                      q.Index('user_by_email'),
+                      q.Casefold(session.user?.email ?? ''),
+                    ),
+                  ),
+                ),
+              ),
+              q.Match(q.Index('subscription_by_status'), 'active'),
+            ]),
+          ),
+        );
+
+        console.log(userActiveSubscription);
+        
+
+        return {
+          ...session,
+          activeSubscription: userActiveSubscription,
+        };
+
+      } catch {
+        return {
+          ...session,
+          activeSubscription: null,
+        };
+      }
+    },
+    async signIn({ user }): Promise<boolean> {
       const { email } = user;
 
       try {
