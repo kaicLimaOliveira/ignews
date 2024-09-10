@@ -29,7 +29,7 @@ export default NextAuth({
               q.Match(
                 q.Index('subscription_by_user_ref'),
                 q.Select(
-                  'ref',
+                  'subscriptions',
                   q.Get(
                     q.Match(
                       q.Index('user_by_email'),
